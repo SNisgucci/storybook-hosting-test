@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "storybook-static",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/@(|index.html)",
+        "destination": "/auth.html"
+      }
+    ],
+    "redirects": [ {
+      "source": "/@(|index.html)",
+      "destination": "/auth.html",
+      "type": 301
+    } ]
+  }
+}
